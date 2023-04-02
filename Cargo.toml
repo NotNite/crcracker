@@ -1,0 +1,10 @@
+[package]
+name = "crcracker"
+description = "obliterate xiv shader hashes"
+authors = ["NotNite <hi@notnite.com>"]
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+clap = { version = "4.2.1", features = ["derive"] }
+cloudflare-zlib-sys = "0.3.0"
