@@ -2,7 +2,7 @@
 name = "crcracker"
 description = "obliterate xiv shader hashes"
 authors = ["NotNite <hi@notnite.com>"]
-version = "0.1.0"
+version = "0.1.1"
 edition = "2021"
 
 [dependencies]
