@@ -21,7 +21,7 @@ then make a hash list file, containing hashes seperated a newline (such as `38A6
 then, Just Run It:
 
 ```shell
-cargo run --release -- --word-list=words.txt --hash-list=hashes.txt --threads=8 --prefix "g_"
+cargo run --release -- --word-list=words.txt --hash-list=hashes.txt --prefix "g_" --threads 8
 ```
 
 by default, hashes will be printed both immediately when found and when all possible values have been found. see the `--print-when-found` argument below if you only want to see the results when it's finished.
@@ -32,9 +32,7 @@ by default, hashes will be printed both immediately when found and when all poss
 - `-h, --hash-list`: path to hash list file
 - `-t, --threads`: number of threads to use (default: 1, *incredibly* slow)
 - `-p, --prefix`: prefix to use for hashing (optional)
-- `--print-progress`: whether to print progress to stdout (default: true)
 - `--print-when-found`: whether to print immediately when a hash is found (default: true)
-- `--print-every`: when to print progress (default: 10000000)
 
 ## collisions
 
