@@ -9,8 +9,9 @@ XIV shaders store hashed names, usually in the format of `g_{word one}{word two}
 it's speedy, because
 
 - it's in :rocket: :crab: rust :crab: :rocket:
-- it's multi-threaded (albeit poorly)
-- it uses CRC Combination (sparkles)
+- it's multi-threaded :twisted_rightwards_arrows: (albeit poorly)
+- it uses CRC Combination :sparkles:
+- it uses some kind of meet-in-the-middle attack :comet:
 
 ## usage
 
@@ -28,10 +29,13 @@ by default, hashes will be printed both immediately when found and when all poss
 
 ## arguments
 
-- `-w, --word-list`: path to word list file
-- `-h, --hash-list`: path to hash list file
+- `-W, --word-list`: path to word list file
+- `-H, --hash-list`: path to hash list file
 - `-t, --threads`: number of threads to use (default: 1, *incredibly* slow)
 - `-p, --prefix`: prefix to use for hashing (optional)
+- `-P, --prefix-hash`: hash of an unknown prefix to use for partial attacks (optional)
+- `-s, --separator`: separator to use between words for hashing (optional)
+- `-x, --suffix`: suffix to use for hashing (optional)
 - `--print-when-found`: whether to print immediately when a hash is found (default: true)
 
 ## collisions
